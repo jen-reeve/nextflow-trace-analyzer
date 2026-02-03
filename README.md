@@ -1,4 +1,6 @@
 # nextflow-trace-analyzer
+[![Test & Coverage](https://github.com/jen-reeve/nextflow-trace-analyzer/actions/workflows/pytest.yml/badge.svg)](https://github.com/jen-reeve/nextflow-trace-analyzer/actions)
+
 Simple Python script for assessing efficiency of Nextflow pipeline processes based the trace file.
 
 ```sh
