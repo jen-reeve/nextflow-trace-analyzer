@@ -3,19 +3,20 @@ Simple Python script for assessing efficiency of Nextflow pipeline processes bas
 
 ```sh
 $ python3 nextflow-trace-analyzer.py --help
-usage: nextflow-trace-analyzer.py [-h] [--min-tasks MIN_TASKS] [--out OUT] [--config-out CONFIG_OUT] [--default-executor {slurm,pbs,local}] trace
+usage: nextflow-trace-analyzer.py [-h] --input TRACE [--min-tasks MIN_TASKS] [--out OUT] [--config-out CONFIG_OUT] [--default-executor {slurm,pbs,local}]
 
-Nextflow trace efficiency analyzer with concurrency-aware head sizing
-
-positional arguments:
-  trace
+Nextflow trace efficiency analyzer
 
 options:
   -h, --help            show this help message and exit
+  --input TRACE         Path to Nextflow trace file or directory containing trace files
   --min-tasks MIN_TASKS
-  --out OUT
+                        Minimum number of tasks per process to be considered in evaluation
+  --out OUT             Path to output analysis report
   --config-out CONFIG_OUT
+                        Path to output Nextflow config file with recommended settings
   --default-executor {slurm,pbs,local}
+                        Default executor type for the workflow (used for some specific recommendations)
   ```
 
 ## Example

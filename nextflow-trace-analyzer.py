@@ -300,7 +300,7 @@ def write_config(config_map, trace_file, out_path):
 
 def main():
     ap = argparse.ArgumentParser(
-        description="Nextflow trace efficiency analyzer with concurrency-aware head sizing"
+        description="Nextflow trace efficiency analyzer"
     )
     ap.add_argument("--input", type=Path, help = "Path to Nextflow trace file or directory containing trace files", dest="trace", required=True)
     ap.add_argument("--min-tasks", type=int, default=1, help="Minimum number of tasks per process to be considered in evaluation", required=False)
